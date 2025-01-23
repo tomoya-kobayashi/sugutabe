@@ -4,8 +4,209 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>スグ食べ</title>
+
+  <!-- stylesheet の読み込み -->
+  <link rel="stylesheet" href="assets/css/destyle.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- google font の読み込み-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Joan&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <div class="container" id="container">
+    <header class="header" id="header">
+      <!-- ロゴ -->
+      <div class="header__logo-wrapper logo-wrapper">
+        <h1 class="header__logo logo">
+          <a href="#"><img src="" alt="">ロゴ</a>
+        </h1>
+      </div>
+      <!-- ナビゲーション -->
+      <nav class="header__nav-wrapper nav-wrapper">
+        <!-- グロナビ(PC時に表示) -->
+        <ul class="header__nav header__nav--global nav">
+          <li class="header__nav-item nav-item nav-item--about"><a href="#about" aria-label="スグ食べとはへ移動">スグ食べとは</a></li>
+          <li class="header__nav-item nav-item nav-item--reason"><a href="#reason" aria-label="選ばれる理由へ移動">選ばれる理由</a></li>
+          <li class="header__nav-item nav-item nav-item--voice"><a href="#voice" aria-label="お客様の声へ移動">お客様の声</a></li>
+          <li class="header__nav-item nav-item nav-item--faq"><a href="#faq" aria-label="よくあるご質問へ移動">よくあるご質問</a></li>
+          <!-- お試し購入(PC・モバイル時に表示) -->
+          <li class="header__nav-item nav-item nav-item--trial"><a href="#trail-1" aria-label="お試し購入へ移動">お試し購入</a></li>
+        </ul>
+        <!-- ハンバーガーメニュー(モバイル時に表示) -->
+        <div class="header__nav header__nav--hamburger nav"><img src="" alt="ハンバーガーメニュー">ハンバーガー</div>
+      </nav>
+    </header>
+
+    <main class="main" id="main">
+      <section class="fv" id="fv">
+        <div class="fv__upper">
+          <!-- メインビジュアル -->
+          <ul class="fv__img-container">
+            <img src="" alt="" class="fv__img-item fv__img-item--1">画像1
+            <img src="" alt="" class="fv__img-item fv__img-item--2">画像2
+            <img src="" alt="" class="fv__img-item fv__img-item--3">画像3
+          </ul>
+        </div>
+        <div class="fv__lower">
+          <!-- テキスト -->
+          <div class="fv__text-container">
+            <h1 class="fv__text-main">安心・安全な<br class="sp-br">オーガニック野菜で、<br>大切な人の健康を守る。</h1>
+            <p class="fv__text-sub">こだわり農家の朝どりオーガニック野菜を、ご自宅で</p>
+          </div>
+          <!-- お試し購入ボタン -->
+          <button class="fv__button-container">
+            <img src="" alt="" class="fv__button">お試し購入
+          </button>
+          <!-- スクロール -->
+          <div class="fv__scroll scroll">
+            <p>scroll</p>
+          </div>
+        </div>
+      </section> <!-- end of fv -->
+
+      <section class="organic" id="organic">
+        <!-- タイトル -->
+        <div class="organic__title-container title-container">
+          <h2 class="organic__title title"><span class="green">オーガニック野菜</span>ってご存じですか？</h2>
+        </div>
+        <!-- コンテンツ -->
+        <div class="organic__content">
+          <!-- オーガニック野菜画像 -->
+          <div class="organic__img-container">
+            <img src="" alt="" class="organic__img-item">オーガニック野菜画像
+          </div>
+          <!-- 説明文 -->
+          <div class="organic__text-container">
+            <p class="organic__text"><span class="green">オーガニック野菜は、農薬や化学肥料を使わず、自然の力で育てられた野菜です。</span>農薬や化学物質の摂取を抑えられるため、<span class="bold">健康に良いのはもちろん、栄養価が高く、素材本来の甘みや風味を存分に楽しめます。</span><br><br>成長期のお子様や、働き盛りの旦那さんの健康のために、安心して毎日食べられる野菜を選びたいですよね。でも、<span class="bold">信頼できる農家さんを見つけるのは難しく、スーパーの野菜は鮮度が落ちていることが多いのが現実です。</span></p>
+          </div>
+        </div>
+        <!-- スクロール -->
+        <div class="fv__scroll scroll">
+          <p>scroll</p>
+        </div>
+      </section> <!-- end of organic -->
+
+      <section class="worry" id="worry">
+        <!-- タイトル -->
+        <div class="worry__title-container title-container">
+          <h2 class="worry__title title">あなたのお悩み、<br><span class="green">オーガニック野菜</span>なら<br class="sp-br">解決できます！</h2>
+        </div>
+        <!-- コンテンツ -->
+        <div class="worry__content">
+          <ul class="worry__worry-container">
+            <li class="worry__worry-item worry__worry-item--1"><span class="red">家族の健康</span>を守るために、安心して選べる野菜を探したい。</li>
+            <li class="worry__worry-item worry__worry-item--2">せっかくなら、信頼できる<span class="red">安心・安全な野菜</span>を選びたい。</li>
+            <li class="worry__worry-item worry__worry-item--3"><span class="red">旬の新鮮な食材</span>を使って、家族においしい食事を楽しんでもらいたい。</li>
+          </ul>
+          <!-- 人物画像 -->
+          <div class="worry__img-container">
+            <img src="" alt="" class="worry__img-item">人物画像
+          </div>
+        </div>
+        <!-- 三角形 -->
+        <div class="worry__triangle">
+          <img src="" alt="" class="triangle">三角形（背景）
+        </div>
+      </section> <!-- end of worry -->
+
+      <section class="recommend" id="recommend">
+        <div class="recommend__text-container">
+          <h2 class="recommend__text">そんなアナタに、<span class="marker">スグ食べがおすすめ！</span></h2>
+        </div>
+      </section> <!-- end of recommend -->
+
+      <section class="about" id="about">
+        <!-- タイトル -->
+        <div class="about__title-container title-container">
+          <h2 class="about__title title">スグ食べってどんなサービス？</h2>
+        </div>
+        <!-- コンテンツ -->
+        <div class="about__content">
+          <!-- グラフィック -->
+          <ul class="about__graphic-container">
+            <li class="about__graphic-item about__graphic-item--1">
+              <img src="" alt="" class="circle">
+              <img src="" alt="" class="square">
+            </li>
+            <li class="about__graphic-item about__graphic-item--2">
+              <img src="" alt="" class="circle">
+              <img src="" alt="" class="square">
+            </li>
+            <li class="about__graphic-item about__graphic-item--3">
+              <img src="" alt="" class="circle">
+              <img src="" alt="" class="square">
+            </li>
+          </ul>
+          <!-- テキストとボタン -->
+          <div class="about__lower">
+            <!-- 説明文 -->
+            <div class="about__text-container">
+              <p class="about__text">「スグ食べ」は、<span class="bold">厳選したオーガニック農家さんの穫れたて野菜</span>を販売しています。食材から選べるのはもちろん、生産者からも選べます。生産方法や生産地、それぞれ異なるこだわりで、お気に入りの農家さんを見つけてください。最短で24時間以内に届く新鮮なオーガニック野菜宅配サービスです。</p>
+            </div>
+            <!-- お試し購入ボタン -->
+            <button class="about__button-container">
+              <img src="" alt="" class="about__button trial-button">お試し購入
+            </button>
+          </div>
+        </div> <!-- end of about__content -->
+
+        <!-- 三角形 -->
+        <div class="worry__triangle">
+          <img src="" alt="" class="triangle">三角形（背景）
+        </div>
+      </section> <!-- end of about -->
+
+      <section class="trial traial-1" id="trial-1">
+        <!-- タイトル -->
+        <div class="trial__title-container title-container">
+          <h2 class="trial__title title">１回限り！少量セットお試し</h2>
+          <p class="trial__title trial__title--sub title title--sub">自信があるから、是非食べてもらいたい</p>
+        </div>
+        <!-- コンテンツ -->
+        <div class="trial__content">
+          <ul class="trial__img-container">
+            <li class="trial__img-item trial__img-item--1">
+              <img src="" alt="">お試しセット1
+            </li>
+            <li class="trial__img-item trial__img-item--2">
+              <img src="" alt="">お試しセット2
+            </li>
+          </ul> <!-- end of trial__img-container -->
+          <!-- お試し購入ボタン -->
+          <button class="trial__button-container">
+            <img src="" alt="" class="trial__button trial-button">お試し購入
+          </button>
+        </div> <!-- end of trial__content -->
+        <!-- 三角形 -->
+        <div class="trial__triangle">
+          <img src="" alt="" class="triangle">三角形（背景）
+        </div>
+        <!-- スクロール -->
+        <div class="trial__scroll scroll">
+          <p>scroll</p>
+        </div>
+      </section> <!-- end of trial -->
+
+      <section class="reason" id="reason"></section> <!-- end of reason -->
+      <section class="voice" id="voice"></section> <!-- end of voice -->
+      <section class="faq" id="faq"></section> <!-- end of faq -->
+      <section class="trial traial-2" id="trial-2"></section> <!-- end of trail -->
+    </main>
+    <footer class="footer" id="footer">
+      <!-- ロゴ -->
+      <div class="footer__logo-wrapper logo-wrapper">
+        <h1 class="footer__logo logo">
+          <a href="#"><img src="" alt=""></a>
+        </h1>
+      </div>
+    </footer>
+  </div>
+  <!-- jqueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- jsの読み込み -->
+  <script src="assets/js/main.js"></script>
 </body>
-</html>∏
+</html>

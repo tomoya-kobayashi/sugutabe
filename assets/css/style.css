@@ -30,6 +30,33 @@ h3 {
   }
 }
 
+span.green {
+  color: #66A256;
+}
+span.red {
+  color: #E25C55;
+}
+span.bold {
+  font-weight: bold;
+}
+span.merker {
+  color: #EEDEB1;
+}
+
+h2.title {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-weight: 600;
+  line-height: 184%;
+  letter-spacing: 2.8px;
+  text-align: center;
+}
+
+h2.organic__title::after {
+  content: "";
+  background-image: url("../img/text/ORGANIC.svg");
+  background-size: contain;
+}
+
 .header {
   background-color: white;
   display: flex;
@@ -243,7 +270,12 @@ h3 {
   padding: clamp(20px, 3vw, 45px) clamp(18px, 3vw, 64px);
 }
 .fv__text-container h1.fv__text-main {
-  font-size: clamp(1.5rem, 3vw, 5rem);
+  font-size: clamp(1.5rem, 5vw, 5rem);
+}
+@media screen and (min-width: 767px) {
+  .fv__text-container h1.fv__text-main {
+    font-size: clamp(1.5rem, 3.4vw, 5rem);
+  }
 }
 .fv__text-container p.fv__text-sub {
   font-size: clamp(0.8rem, 1vw, 1.25rem);

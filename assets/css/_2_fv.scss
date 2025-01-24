@@ -2,11 +2,14 @@
     overflow-x: hidden;
     overflow-y: visible;
 }
+
+// 上半分
 .fv__upper {
     width: 100%;
     z-index: 0;
 }
 
+// メインビジュアル画像　外枠
 .fv__img-container {
     display: flex;
     justify-content: space-between;
@@ -15,7 +18,7 @@
         gap: 20px;
     }
 }
-
+// メインビジュアル画像
 .fv__img-wrapper {
     max-height: 417px;
     @include pc {
@@ -23,6 +26,7 @@
     }
 }
 
+// 下半分
 .fv__lower {
     display: flex;
     flex-direction: column;
@@ -38,11 +42,15 @@
     }
 }
 
+// テキスト部分
 .fv__text-container {
     padding: clamp(20px, 3vw, 45px) clamp(18px, 3vw, 64px);
 
     h1.fv__text-main {
-        font-size: clamp(1.5rem, 3vw, 5rem);
+        font-size: clamp(1.5rem, 5.0vw, 5rem);
+        @include pc {
+            font-size: clamp(1.5rem, 3.4vw, 5rem);
+        }
     }
     p.fv__text-sub {
         font-size: clamp(0.8rem, 1vw, 1.25rem);
@@ -51,6 +59,7 @@
 
 }
 
+// ボタン部分
 .fv__button-container {
     position: absolute;
     width: 100%;

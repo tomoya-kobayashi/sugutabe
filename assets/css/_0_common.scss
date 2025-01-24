@@ -26,3 +26,32 @@ h3 {
     display: inline;
   }
 }
+
+span {
+  &.green {
+    color: $my-green;
+  }
+  &.red {
+    color: $my-red;
+  }
+  &.bold {
+    font-weight: bold;
+  }
+  &.merker {
+    color: $dull-yellow;
+  }
+}
+
+h2.title {
+  font-size: clamp(1.5rem, 5.0vw, 2.5rem);
+  font-weight: 600;
+  line-height: 184%;
+  letter-spacing: 2.8px;
+  text-align: center;
+}
+
+h2.organic__title::after {
+  content: "";
+  background-image: url("../img/text/ORGANIC.svg");
+  background-size: contain;
+}

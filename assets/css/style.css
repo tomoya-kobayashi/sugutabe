@@ -7,6 +7,29 @@ img {
   max-width: 100%;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: 3.36px;
+}
+
+@media screen and (min-width: 767px) {
+  .sp-br {
+    display: none;
+  }
+}
+
+.pc-br {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .pc-br {
+    display: inline;
+  }
+}
+
 .header {
   background-color: white;
   display: flex;
@@ -168,4 +191,90 @@ img {
   width: 60px;
   height: 1px;
   transform: translate(-20px, -5px);
+}
+
+.fv {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+.fv__upper {
+  width: 100%;
+  z-index: 0;
+}
+
+.fv__img-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .fv__img-container {
+    gap: 20px;
+  }
+}
+
+.fv__img-wrapper {
+  max-height: 417px;
+}
+@media screen and (min-width: 767px) {
+  .fv__img-wrapper {
+    max-height: 600px;
+  }
+}
+
+.fv__lower {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 50vw;
+}
+@media screen and (min-width: 767px) {
+  .fv__lower {
+    padding-bottom: 0;
+    flex-direction: row;
+  }
+}
+
+.fv__text-container {
+  padding: clamp(20px, 3vw, 45px) clamp(18px, 3vw, 64px);
+}
+.fv__text-container h1.fv__text-main {
+  font-size: clamp(1.5rem, 3vw, 5rem);
+}
+.fv__text-container p.fv__text-sub {
+  font-size: clamp(0.8rem, 1vw, 1.25rem);
+  padding-top: 4px;
+}
+
+.fv__button-container {
+  position: absolute;
+  width: 100%;
+  right: -4%;
+  bottom: 0%;
+}
+@media screen and (min-width: 767px) {
+  .fv__button-container {
+    width: 42%;
+    right: -9%;
+    top: -15px;
+  }
+  .fv__button-container img {
+    width: 100%;
+  }
+}
+
+.fv__scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

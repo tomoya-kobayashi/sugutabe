@@ -6,3 +6,23 @@
 img {
   max-width: 100%;
 }
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: 3.36px;
+}
+
+.sp-br {
+  @include pc {
+    display: none;
+  }
+}
+.pc-br {
+  display: none;
+  @include pc {
+    display: inline;
+  }
+}

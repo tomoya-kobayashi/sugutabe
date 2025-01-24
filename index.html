@@ -8,6 +8,8 @@
   <!-- stylesheet の読み込み -->
   <link rel="stylesheet" href="assets/css/destyle.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
   <!-- google font の読み込み-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,13 +75,14 @@
       ファーストビュー
     -------------------------------------->
       <section class="fv" id="fv">
-        <div class="fv__upper">
+        <div class="swiper fv__upper">
           <!-- メインビジュアル -->
-          <ul class="fv__img-container">
-            <img src="assets/img/photo/fv__vegetable.png" alt="旬の野菜" class="fv__img-item fv__img-item--1">
-            <img src="assets/img/photo/fv__family.png" alt="家族で料理" class="fv__img-item fv__img-item--2">
-            <img src="assets/img/photo/fv__child.png" alt="野菜を持つ子供" class="fv__img-item fv__img-item--3">
+          <ul class="swiper-wrapper fv__img-container">
+            <li class="swiper-slide fv__img-wrapper"><img src="assets/img/photo/fv__vegetable.png" alt="旬の野菜" class="fv__img-item fv__img-item--1"></li>
+            <li class="swiper-slide fv__img-wrapper"><img src="assets/img/photo/fv__family.png" alt="家族で料理" class="fv__img-item fv__img-item--2"></li>
+            <li class="swiper-slide fv__img-wrapper"><img src="assets/img/photo/fv__child.png" alt="野菜を持つ子供" class="fv__img-item fv__img-item--3"></li>
           </ul>
+          <div class="swiper-pagination"></div>
         </div>
         <div class="fv__lower">
           <!-- テキスト -->
@@ -91,11 +94,11 @@
           <button class="fv__button-container">
             <img src="assets/img/parts/fv__trial-button.png" alt="お試し購入ボタン" class="fv__button">
           </button>
-          <!-- スクロール -->
-          <div class="fv__scroll scroll">
-            <p>scroll</p>
-            <img src="assets/img/parts/vertical_line.svg" alt="">
-          </div>
+        </div>
+        <!-- スクロール -->
+        <div class="fv__scroll scroll">
+          <p>scroll</p>
+          <img src="assets/img/parts/vertical_line.svg" alt="">
         </div>
       </section> <!-- end of fv -->
 
@@ -394,6 +397,8 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <!-- jsの読み込み -->
   <script src="assets/js/main.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
 </body>
 
 

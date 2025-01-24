@@ -40,5 +40,26 @@
     // scrollToContent('.nav-item--skill', '#skill');
     // scrollToContent('.nav-item--access', '#access');
     // scrollToContent('.logo', '#fv');
+
+    const swiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      breakpoints: {
+        // 768px以上の場合は３枚表示
+        768: {
+          slidesPerView: 3
+        }
+      },
+      // ページネーション
+      pagination: {
+        el: ".swiper-pagination"
+      },
+    
+      // ナビボタン
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      }
+    });
+
   });
 }

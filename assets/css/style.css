@@ -5,4 +5,119 @@
 
 img {
   max-width: 100%;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 90;
+  height: clamp(60px, 10vw, 130px);
+}
+
+.header__logo-wrapper {
+  width: 30%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+@media screen and (min-width: 767px) {
+  .header__logo-wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.header__logo {
+  width: clamp(132px, 117.3%, 269px);
+}
+.header__logo img {
+  display: inline-block;
+  width: 100%;
+}
+
+.header__nav-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.header__nav--global {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .header__nav--global {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__nav--sp {
+  display: flex;
+  height: 100%;
+}
+@media screen and (min-width: 767px) {
+  .header__nav--sp {
+    display: none;
+  }
+}
+
+.header__nav-item--trial {
+  height: 100%;
+  background-color: #C79167;
+}
+.header__nav-item--trial a {
+  display: inline-block;
+  color: white;
+}
+
+.header__nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: clamp(1rem, 1.6vw, 1.5rem);
+  font-weight: 600;
+  height: 100%;
+}
+.header__nav-item a {
+  display: inline-block;
+  padding: 0 clamp(8px, 1.1vw, 21px);
+}
+.header__nav-item img {
+  display: inline-block;
+  height: 45%;
+  padding: 0 16px;
+}
+
+.header__nav-item--about::after {
+  content: "ABOUT";
+}
+.header__nav-item--reason::after {
+  content: "REASON";
+}
+.header__nav-item--voice::after {
+  content: "VOICE";
+}
+.header__nav-item--faq::after {
+  content: "FAQ";
+}
+.header__nav-item--trial::after {
+  content: "TRIAL";
+}
+.header__nav-item--hamburger::after {
+  content: "MENU";
+}
+.header__nav-item--about::after, .header__nav-item--reason::after, .header__nav-item--voice::after, .header__nav-item--faq::after, .header__nav-item--trial::after, .header__nav-item--hamburger::after {
+  color: #C79167;
+  font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+  padding-top: 6px;
+}
+.header__nav-item--trial::after {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

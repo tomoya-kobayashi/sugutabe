@@ -1,0 +1,139 @@
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 90;
+    // headerの高さを明示（子要素で高さを指定するため）
+    height: clamp(60px, 10vw, 130px)
+}
+
+// ロゴ部分　外側
+.header__logo-wrapper {
+    // ヘッダーの横幅に対する比率
+    width: 30%;
+
+    padding-top: 11px;
+    padding-bottom: 11px;
+    @include pc {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+// ロゴ部分　内側
+.header__logo{
+    // header__logo-wrapperに対する比率
+    width: clamp(132px, 117.3%, 269px);
+
+    img{
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+// ヘッダー右側全体
+.header__nav-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+// pc時のメニュー（グロナビ）
+.header__nav--global{
+    // モバイル時には非表示
+    display: none;
+
+    @include pc {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // gap: clamp(14px, 2.1vw, 42px);
+    }
+}
+
+// モバイル時のメニュー（お試し購入＋ハンバーガー）
+.header__nav--sp {
+    // pc時には非表示
+    @include pc {
+        display: none;
+    }
+    display: flex;
+    height: 100%;
+}
+
+// お試し購入メニュー（着色する）
+.header__nav-item--trial {
+    height: 100%;
+    background-color: $my-brown;
+    a {
+        display: inline-block;
+        color: white;
+    }
+}
+
+// ナビゲーションメニューの各要素
+.header__nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    font-size: clamp(1rem, 1.6vw, 1.5rem);
+    font-weight: 600;
+    height: 100%;
+    // テキストのメニュー
+    a {
+        display: inline-block;
+        padding: 0 clamp(8px, 1.1vw, 21px);
+    }
+    // ハンバーガーメニュー画像
+    img {
+        display: inline-block;
+        height: 45%;
+        padding: 0 16px;
+    }
+}
+
+// ナビの各要素に英語のあしらいを追加
+.header__nav-item{
+    // 追加するテキスト
+    &--about::after {
+        content: "ABOUT";
+    }
+    &--reason::after {
+        content: "REASON";
+    }
+    &--voice::after {
+        content: "VOICE";
+    }
+    &--faq::after {
+        content: "FAQ";
+    }
+    &--trial::after {
+        content: "TRIAL";
+    }
+    &--hamburger::after {
+        content: "MENU";
+    }
+    // テキストのスタイル
+    &--about::after,
+    &--reason::after,
+    &--voice::after,
+    &--faq::after,
+    &--trial::after,
+    &--hamburger::after
+    {
+        color: $my-brown;
+        font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+        padding-top: 6px;
+    }
+    // お試しセットのみ色を変更
+    &--trial::after
+    {
+        color: white;
+    }
+}

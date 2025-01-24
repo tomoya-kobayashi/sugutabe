@@ -1,3 +1,16 @@
+//コンテンツの横幅
+$content-width_pc: 80%; //PC
+$content-width_mobile: 90%; //モバイル
+$content-padding_pc: calc((100% - $content-width_pc) / 2);
+$content-padding_mobile: calc((100% - $content-width_mobile) / 2);
+
+//ヘッダーの横幅
+$header-width_pc: 84%; //PC
+$header-width_mobile: 90%; //モバイル
+$header-padding_pc: calc((100% - $header-width_pc) / 2);
+$header-padding_mobile: calc((100% - $header-width_mobile) / 2);
+
+//色
 $font-black: #422B1A;
 $my-red: #E25C55;
 $my-green: #66A256;
@@ -6,3 +19,12 @@ $my-beige: #F9EFE3;
 $dull-yellow: #EEDEB1;
 $light-yellow: #FFFCDE;
 
+//======================================================
+// メディアクエリの設定
+// 使用方法：通常のcssの中で、"@include pc{PC版のcss}"のように記述
+//======================================================
+@mixin pc{ //モバイル
+    @media screen and (min-width: 767px){
+        @content;
+    }
+}

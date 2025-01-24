@@ -2,12 +2,12 @@
 {
   $(function(){
     // ハンバーガーメニュークリック時，ドロワーメニューを開く
-    $('.header__nav--hamburger').on("click", function(){
-    $('.drawer').addClass('open');
+    $('.header__nav-item--hamburger').on("click", function(){
+      $('.drawer').addClass('open');
     });
     // ドロワーメニュー内をクリック時，ドロワーメニューを閉じる 
     $('.drawer').on('click', function(){
-    $('.drawer').removeClass('open');
+      $('.drawer').removeClass('open');
     });
   
     

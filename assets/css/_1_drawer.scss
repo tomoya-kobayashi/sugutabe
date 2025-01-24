@@ -1,0 +1,52 @@
+.drawer {
+    background-color: $my-brown;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+    z-index: 100;
+  
+    transform: translateX(-100%);
+    &.open {
+      transform: translateX(0%);
+    }
+  }
+  
+  .drawer__logo-wrapper {
+    width: 50%;
+    
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .drawer__logo{
+    width: clamp(171px, 80%, 331px);
+  
+    img{
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  
+  .drawer__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  // ナビゲーションの要素
+  .drawer__nav-item {
+    margin-top: 70px;
+  
+    // 横棒
+    &::before {
+      content: "";
+      display: inline-block;
+      background-color: $font-black;
+      width: 60px;
+      height: 1px;
+      transform: translate(-20px, -5px);
+    }
+  }

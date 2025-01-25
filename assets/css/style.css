@@ -114,6 +114,14 @@ h2.faq__title::after {
   }
 }
 
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
 .header {
   background-color: white;
   display: flex;
@@ -354,14 +362,6 @@ h2.faq__title::after {
   .fv__button-container img {
     width: 100%;
   }
-}
-
-.fv__scroll {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
 }
 
 .swiper {

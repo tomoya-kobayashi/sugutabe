@@ -15,6 +15,13 @@ h3 {
   letter-spacing: 3.36px;
 }
 
+p.text {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-weight: 400;
+  line-height: 184%;
+  letter-spacing: 0.6px;
+}
+
 .sp-br {
   @include pc {
     display: none;
@@ -42,6 +49,7 @@ span {
   }
 }
 
+// h2タイトル共通設定
 h2.title {
   font-size: clamp(1.5rem, 5.0vw, 2.5rem);
   font-weight: 600;
@@ -114,7 +122,7 @@ h2.faq__title::after {
   }
 }
 
-
+// スクロールコンテンツ設定（"scroll"と縦棒）
 .scroll {
   display: flex;
   flex-direction: column;
@@ -122,4 +130,13 @@ h2.faq__title::after {
   justify-content: center;
   
   width: 100%;
+}
+
+// コンテンツ幅　共通設定
+.content {
+  padding: 0 $content-padding_mobile;
+  @include pc {
+    padding: 0 $content-padding_pc;
+  }
+  overflow: hidden;
 }

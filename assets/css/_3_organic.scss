@@ -1,0 +1,24 @@
+.organic__content {
+  display: flex;
+  flex-direction: column;
+  @include pc {
+    flex-direction: row-reverse;
+    gap: 4.23vw;
+  }
+}
+
+.organic__img-container {
+  width: 110%;
+  transform: translateX(-5%);
+  @include pc {
+    transform: translateX(0%);
+    width: 50%;
+  }
+}
+.organic__text-container {
+  padding: 7.46vw 0;
+  @include pc {
+    padding: 0;
+    width: 50%;
+  }
+}

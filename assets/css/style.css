@@ -15,6 +15,13 @@ h3 {
   letter-spacing: 3.36px;
 }
 
+p.text {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-weight: 400;
+  line-height: 184%;
+  letter-spacing: 0.6px;
+}
+
 @media screen and (min-width: 767px) {
   .sp-br {
     display: none;
@@ -120,6 +127,16 @@ h2.faq__title::after {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.content {
+  padding: 0 5%;
+  overflow: hidden;
+}
+@media screen and (min-width: 767px) {
+  .content {
+    padding: 0 10%;
+  }
 }
 
 .header {
@@ -366,4 +383,36 @@ h2.faq__title::after {
 
 .swiper {
   width: 100%;
+}
+
+.organic__content {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 767px) {
+  .organic__content {
+    flex-direction: row-reverse;
+    gap: 4.23vw;
+  }
+}
+
+.organic__img-container {
+  width: 110%;
+  transform: translateX(-5%);
+}
+@media screen and (min-width: 767px) {
+  .organic__img-container {
+    transform: translateX(0%);
+    width: 50%;
+  }
+}
+
+.organic__text-container {
+  padding: 7.46vw 0;
+}
+@media screen and (min-width: 767px) {
+  .organic__text-container {
+    padding: 0;
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -49,12 +49,69 @@ h2.title {
   line-height: 184%;
   letter-spacing: 2.8px;
   text-align: center;
+  position: relative;
+  padding: clamp(28px, 6vw, 105px) 0;
+  overflow-y: visible;
+}
+
+h2.title::after {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: block;
+  width: 100vw;
+  height: clamp(280px, 40vw, 450px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+@media screen and (min-width: 767px) {
+  h2.title::after {
+    background-size: 70% auto;
+  }
 }
 
 h2.organic__title::after {
   content: "";
   background-image: url("../img/text/ORGANIC.svg");
-  background-size: contain;
+}
+
+h2.worry__title::after {
+  content: "";
+  background-image: url("../img/text/SUGUTABE.svg");
+}
+
+h2.about__title::after {
+  content: "";
+  background-image: url("../img/text/ABOUT.svg");
+}
+
+h2.trial__title::after {
+  content: "";
+  background-image: url("../img/text/TRIAL.svg");
+}
+
+h2.reason__title::after {
+  content: "";
+  background-image: url("../img/text/REASON.svg");
+}
+
+h2.voice__title::after {
+  content: "";
+  background-image: url("../img/text/VOICE.svg");
+}
+
+h2.faq__title::after {
+  content: "";
+  background-image: url("../img/text/FAQ.svg");
+  background-size: 70% auto;
+}
+@media screen and (min-width: 767px) {
+  h2.faq__title::after {
+    background-size: 50% auto;
+  }
 }
 
 .header {

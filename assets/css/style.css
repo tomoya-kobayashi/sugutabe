@@ -415,4 +415,79 @@ h2.faq__title::after {
     padding: 0;
     width: 50%;
   }
+}
+
+.worry__worry-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .worry__worry-container {
+    flex-direction: row;
+    padding-top: 9.4vw;
+  }
+}
+
+.worry__worry-item {
+  width: 67.2%;
+}
+.worry__worry-item img {
+  display: inline-block;
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .worry__worry-item {
+    width: 35.8%;
+  }
+}
+
+.worry__worry-item--1 {
+  transform: translateX(-19.2vw);
+}
+@media screen and (min-width: 767px) {
+  .worry__worry-item--1 {
+    transform: translateX(6.9vw);
+  }
+}
+
+.worry__worry-item--2 {
+  transform: translate(19.2vw, -20.3vw);
+}
+@media screen and (min-width: 767px) {
+  .worry__worry-item--2 {
+    transform: translateY(-9.4vw);
+  }
+}
+
+.worry__worry-item--3 {
+  transform: translate(-19.2vw, -40.6vw);
+}
+@media screen and (min-width: 767px) {
+  .worry__worry-item--3 {
+    transform: translateX(-6.9vw);
+  }
+}
+
+.worry__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-40.6vw);
+}
+@media screen and (min-width: 767px) {
+  .worry__img-container {
+    transform: translateY(-14.3vw);
+  }
+}
+
+.worry__img-item {
+  width: 67.2%;
+}
+@media screen and (min-width: 767px) {
+  .worry__img-item {
+    width: 30.7%;
+  }
 }/*# sourceMappingURL=style.css.map */

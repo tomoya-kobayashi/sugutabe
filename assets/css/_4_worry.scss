@@ -1,0 +1,63 @@
+.worry__worry-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  @include pc {
+    flex-direction: row;
+    padding-top: 9.4vw;
+  }
+}
+
+.worry__worry-item {
+  img {
+    display: inline-block;
+    width: 100%;
+  }
+  width: 67.2%;
+  @include pc {
+    width: 35.8%;
+  }
+}
+
+.worry__worry-item--1 {
+  transform: translateX(-19.2vw);
+  @include pc {
+    transform: translateX(6.9vw);
+  }
+}
+.worry__worry-item--2 {
+  transform: translate(19.2vw, -20.3vw);
+  // transform: translateY(-25.3vw);
+  @include pc {
+    transform: translateY(-9.4vw);
+  }
+}
+.worry__worry-item--3 {
+  transform: translate(-19.2vw, calc(-20.3vw * 2));
+  // transform: translateY(calc(-25.3vw * 2));
+  @include pc {
+    transform: translateX(-6.9vw);
+  }
+}
+
+
+.worry__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(calc(-20.3vw * 2));
+
+  @include pc {
+    transform: translateY(-14.3vw);
+  }
+}
+.worry__img-item {
+  width: 67.2%;
+  @include pc {
+    width: 30.7%;
+  }
+}

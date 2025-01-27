@@ -1,3 +1,8 @@
+.worry {
+  position: relative;
+}
+
+// お悩み　外側
 .worry__worry-container {
   display: flex;
   flex-direction: column;
@@ -9,9 +14,11 @@
   @include pc {
     flex-direction: row;
     padding-top: 9.4vw;
+    margin-bottom: -9.4vw;
   }
 }
 
+// お悩み　共通
 .worry__worry-item {
   img {
     display: inline-block;
@@ -23,41 +30,74 @@
   }
 }
 
+// お悩み１
 .worry__worry-item--1 {
   transform: translateX(-19.2vw);
   @include pc {
     transform: translateX(6.9vw);
   }
 }
+// お悩み２
 .worry__worry-item--2 {
   transform: translate(19.2vw, -20.3vw);
-  // transform: translateY(-25.3vw);
+  margin-bottom: -20.3vw; //下にずらした分を相殺
   @include pc {
     transform: translateY(-9.4vw);
+    margin-bottom: 0;
   }
 }
+// お悩み３
 .worry__worry-item--3 {
-  transform: translate(-19.2vw, calc(-20.3vw * 2));
-  // transform: translateY(calc(-25.3vw * 2));
+  transform: translate(-19.2vw, -20.3vw);
+  margin-bottom: -20.3vw; //下にずらした分を相殺
   @include pc {
     transform: translateX(-6.9vw);
+    margin-bottom: 0;
   }
 }
 
-
+// 女性の画像　外側
 .worry__img-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(calc(-20.3vw * 2));
+  transform: translateY(-5vw);
 
   @include pc {
-    transform: translateY(-14.3vw);
+    transform: translateY(-4vw);
   }
 }
+// 女性の画像
 .worry__img-item {
   width: 67.2%;
   @include pc {
     width: 30.7%;
+  }
+}
+
+// 三角形
+.worry__triangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //セクション最下部に配置 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  // 少し上にずらす
+  transform: translateY(6.2vw);
+  @include pc {
+    transform: translateY(5.2vw);
+  }
+  
+  width: 100%;
+  img {
+    display: inline-block;
+    width: 39.5%;
+    @include pc {
+      width: 25.8%;
+    }
   }
 }

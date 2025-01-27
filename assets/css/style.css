@@ -417,6 +417,10 @@ h2.faq__title::after {
   }
 }
 
+.worry {
+  position: relative;
+}
+
 .worry__worry-container {
   display: flex;
   flex-direction: column;
@@ -428,6 +432,7 @@ h2.faq__title::after {
   .worry__worry-container {
     flex-direction: row;
     padding-top: 9.4vw;
+    margin-bottom: -9.4vw;
   }
 }
 
@@ -455,19 +460,23 @@ h2.faq__title::after {
 
 .worry__worry-item--2 {
   transform: translate(19.2vw, -20.3vw);
+  margin-bottom: -20.3vw;
 }
 @media screen and (min-width: 767px) {
   .worry__worry-item--2 {
     transform: translateY(-9.4vw);
+    margin-bottom: 0;
   }
 }
 
 .worry__worry-item--3 {
-  transform: translate(-19.2vw, -40.6vw);
+  transform: translate(-19.2vw, -20.3vw);
+  margin-bottom: -20.3vw;
 }
 @media screen and (min-width: 767px) {
   .worry__worry-item--3 {
     transform: translateX(-6.9vw);
+    margin-bottom: 0;
   }
 }
 
@@ -475,11 +484,11 @@ h2.faq__title::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-40.6vw);
+  transform: translateY(-5vw);
 }
 @media screen and (min-width: 767px) {
   .worry__img-container {
-    transform: translateY(-14.3vw);
+    transform: translateY(-4vw);
   }
 }
 
@@ -489,5 +498,30 @@ h2.faq__title::after {
 @media screen and (min-width: 767px) {
   .worry__img-item {
     width: 30.7%;
+  }
+}
+
+.worry__triangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(6.2vw);
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .worry__triangle {
+    transform: translateY(5.2vw);
+  }
+}
+.worry__triangle img {
+  display: inline-block;
+  width: 39.5%;
+}
+@media screen and (min-width: 767px) {
+  .worry__triangle img {
+    width: 25.8%;
   }
 }/*# sourceMappingURL=style.css.map */

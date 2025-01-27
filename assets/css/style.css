@@ -136,6 +136,35 @@ h2.faq__title::after {
   }
 }
 
+.section {
+  position: relative;
+}
+
+.triangle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(6.2vw);
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .triangle-container {
+    transform: translateY(4.7vw);
+  }
+}
+.triangle-container img.triangle {
+  display: inline-block;
+  width: 39.5%;
+}
+@media screen and (min-width: 767px) {
+  .triangle-container img.triangle {
+    width: 25.8%;
+  }
+}
+
 .header {
   background-color: white;
   display: flex;
@@ -414,10 +443,6 @@ h2.faq__title::after {
   }
 }
 
-.worry {
-  position: relative;
-}
-
 .worry__worry-container {
   display: flex;
   flex-direction: column;
@@ -498,31 +523,6 @@ h2.faq__title::after {
   }
 }
 
-.worry__triangle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  transform: translateY(6.2vw);
-  width: 100%;
-}
-@media screen and (min-width: 767px) {
-  .worry__triangle {
-    transform: translateY(4.7vw);
-  }
-}
-.worry__triangle img {
-  display: inline-block;
-  width: 39.5%;
-}
-@media screen and (min-width: 767px) {
-  .worry__triangle img {
-    width: 25.8%;
-  }
-}
-
 .recommend {
   background-image: url("../img/background/bg_sky_full.png");
   background-size: auto;
@@ -575,5 +575,78 @@ span.marker::before {
   span.marker::before {
     width: clamp(180px, 22vw, 380px);
     height: clamp(30px, 4vw, 70px);
+  }
+}
+
+.about__graphic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 767px) {
+  .about__graphic-container {
+    flex-direction: row;
+    gap: 6.4vw;
+  }
+}
+
+.about__graphic-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -94px;
+}
+.about__graphic-item .circle {
+  display: inline-block;
+  width: 44vw;
+  min-width: 165px;
+  transform: translateY(42px);
+  margin-top: -42px;
+}
+@media screen and (min-width: 767px) {
+  .about__graphic-item .circle {
+    width: 14.4vw;
+    transform: translateY(72px);
+    margin-top: -72px;
+  }
+}
+.about__graphic-item--3 {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 767px) {
+  .about__graphic-item {
+    margin-bottom: 0;
+  }
+}
+
+.about__lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 39px;
+  padding-bottom: 51px;
+  gap: 39px;
+}
+@media screen and (min-width: 767px) {
+  .about__lower {
+    flex-direction: row;
+    padding-top: 84px;
+    padding-bottom: 103px;
+    gap: 56px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .about__text-container {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .about__button-container {
+    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */

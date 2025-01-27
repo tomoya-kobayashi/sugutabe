@@ -46,9 +46,6 @@ span.red {
 span.bold {
   font-weight: bold;
 }
-span.merker {
-  color: #EEDEB1;
-}
 
 h2.title {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
@@ -513,7 +510,7 @@ h2.faq__title::after {
 }
 @media screen and (min-width: 767px) {
   .worry__triangle {
-    transform: translateY(5.2vw);
+    transform: translateY(4.7vw);
   }
 }
 .worry__triangle img {
@@ -523,5 +520,60 @@ h2.faq__title::after {
 @media screen and (min-width: 767px) {
   .worry__triangle img {
     width: 25.8%;
+  }
+}
+
+.recommend {
+  background-image: url("../img/background/bg_sky_full.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 767px) {
+  .recommend {
+    background-size: 100%;
+  }
+}
+
+.recommend__text-container {
+  padding: clamp(59px, 15.7vw, 119px) 0;
+}
+
+.recommend__text {
+  line-height: 221%;
+  text-align: center;
+  font-size: clamp(1.5rem, 6.4vw, 4rem);
+}
+@media screen and (min-width: 767px) {
+  .recommend__text {
+    font-size: clamp(1.5rem, 4.4vw, 4rem);
+  }
+}
+
+span.marker {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(1.5rem, 7.5vw, 5rem);
+}
+@media screen and (min-width: 767px) {
+  span.marker {
+    font-size: clamp(1.5rem, 5.6vw, 5rem);
+  }
+}
+span.marker::before {
+  content: "";
+  background-image: url("../img/parts/marker.svg");
+  background-size: contain;
+  width: 34vw;
+  height: 6vw;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: -1;
+}
+@media screen and (min-width: 767px) {
+  span.marker::before {
+    width: clamp(180px, 22vw, 380px);
+    height: clamp(30px, 4vw, 70px);
   }
 }/*# sourceMappingURL=style.css.map */

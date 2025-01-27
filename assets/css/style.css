@@ -757,4 +757,77 @@ span.marker::before {
   .reason__reason-item h3.caption {
     font-size: clamp(1.25rem, 1.7vw, 1.5rem);
   }
+}
+
+.voice__voice-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 46px;
+  padding-top: 95px;
+  padding-bottom: 40px;
+}
+@media screen and (min-width: 767px) {
+  .voice__voice-container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2.36vw;
+  }
+}
+
+.voice__voice-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #F9EFE3;
+  background-image: url("../img/background/wood_texture25.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 24px;
+  gap: 20px;
+  width: 347px;
+  border-bottom: solid 6px #C79167;
+  position: relative;
+}
+.voice__voice-item--1::before {
+  content: "";
+  background-image: url("../img/parts/voice_tag01.svg");
+}
+.voice__voice-item--2::before {
+  content: "";
+  background-image: url("../img/parts/voice_tag02.svg");
+}
+.voice__voice-item--3::before {
+  content: "";
+  background-image: url("../img/parts/voice_tag03.svg");
+}
+.voice__voice-item::before {
+  display: block;
+  width: 49px;
+  height: 67px;
+  position: absolute;
+  top: -15px;
+  left: 14px;
+}
+.voice__voice-item h3.comment {
+  display: block;
+  text-align: center;
+  background-color: white;
+  color: #E25C55;
+  width: 100%;
+  padding: 32px 0;
+  font-size: clapm(1rem, 1.38vw, 1.25rem);
+}
+.voice__voice-item .profile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.voice__voice-item .profile img.face {
+  width: 50%;
+}
+.voice__voice-item p.text {
+  font-size: 1rem;
 }/*# sourceMappingURL=style.css.map */

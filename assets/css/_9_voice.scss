@@ -1,0 +1,88 @@
+// お客様の声　外側
+.voice__voice-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 46px;
+    padding-top: 95px;
+    padding-bottom: 40px;
+    @include pc {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2.36vw;
+    }
+}
+
+// お客様の声　各要素
+.voice__voice-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    // 背景画像（木目）の指定
+    background-color: $my-beige;
+    background-image: url("../img/background/wood_texture25.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    // 幅・余白の設定
+    padding: 24px;
+    gap: 20px;
+    width: 347px;
+
+    // 線の装飾
+    border-bottom: solid 6px $my-brown;
+    
+    // 01~03タグの配置
+    position: relative;
+    &--1::before {
+        content: "";
+        background-image: url("../img/parts/voice_tag01.svg");
+    }
+    &--2::before {
+        content: "";
+        background-image: url("../img/parts/voice_tag02.svg");
+    }
+    &--3::before {
+        content: "";
+        background-image: url("../img/parts/voice_tag03.svg");
+    }
+    &::before {
+        display: block;
+        width: 49px;
+        height: 67px;
+        position: absolute;
+        top: -15px;
+        left: 14px;
+    }
+
+    // コメント見出し部分
+    h3.comment {
+        display: block;
+        text-align: center;
+        background-color: white;
+        color: $my-red;
+        width: 100%;
+        padding: 32px 0;
+        font-size: clapm(1rem, 1.38vw, 1.25rem);
+    }
+
+    // 顔写真＋個人情報
+    .profile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        img.face {
+            width: 50%;
+        }
+    }
+
+    // コメント本文
+    p.text {
+        font-size: 1rem;
+    }
+
+}

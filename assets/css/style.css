@@ -892,4 +892,34 @@ span.marker::before {
 }
 .faq__faq-item p.text {
   padding-left: 60px;
+}
+
+.footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 90;
+  height: clamp(60px, 10vw, 130px);
+}
+
+.footer__logo-wrapper {
+  width: 30%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+@media screen and (min-width: 767px) {
+  .footer__logo-wrapper {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.footer__logo {
+  width: clamp(132px, 117.3%, 269px);
+}
+.footer__logo img {
+  display: inline-block;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

@@ -1,7 +1,9 @@
+// タイトル　外側
 .faq__title-container {
     padding-top: 2vw;
 }
 
+// faqコンテンツ　外側
 .faq__faq-container {
     display: inline-flex;
     flex-direction: column;
@@ -13,6 +15,7 @@
     margin-bottom: 80px;
 }
 
+// faqコンテンツ　要素
 .faq__faq-item {
     border-bottom: solid 1px $font-black;
     
@@ -23,6 +26,7 @@
     gap: 42px;
     padding: 42px 0;
 
+    // 質問と回答
     h3.question,
     h4.answear{
         vertical-align: middle;
@@ -31,13 +35,14 @@
             font-size: clamp(1.25rem, 5.33vw, 1.5rem);
         }
     }
-
+    // 質問　Qマーク
     h3.question {
         &::before {
             content: "";
             background-image: url("../img/parts/question.svg");
         }
     }
+    // 解答　Aマーク
     h4.answear {
         &::before {
             content: "";
@@ -59,6 +64,7 @@
             left: 0;
         }
     }
+    // 回答詳細部分
     p.text {
         padding-left: 60px;
     }

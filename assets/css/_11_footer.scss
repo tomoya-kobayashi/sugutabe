@@ -1,0 +1,33 @@
+.footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 90;
+    // footerの高さを明示（子要素で高さを指定するため）
+    height: clamp(60px, 10vw, 130px)
+}
+
+// ロゴ部分　外側
+.footer__logo-wrapper {
+    // フッターの横幅に対する比率
+    width: 30%;
+
+    padding-top: 11px;
+    padding-bottom: 11px;
+    @include pc {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+// ロゴ部分　内側
+.footer__logo{
+    // footer__logo-wrapperに対する比率
+    width: clamp(132px, 117.3%, 269px);
+
+    img{
+        display: inline-block;
+        width: 100%;
+    }
+}

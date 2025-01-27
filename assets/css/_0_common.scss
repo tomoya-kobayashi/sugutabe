@@ -137,3 +137,35 @@ h2.faq__title::after {
   }
   overflow: hidden;
 }
+
+.section {
+  position: relative; //全セクションに指定し、背景の三角形を配置可能に
+}
+
+// 三角形
+.triangle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  //セクション最下部に配置 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  // 少し上にずらす
+  transform: translateY(6.2vw);
+  @include pc {
+    transform: translateY(4.7vw);
+  }
+
+  // 三角形画像のサイズ
+  width: 100%;
+  img.triangle {
+    display: inline-block;
+    width: 39.5%;
+    @include pc {
+      width: 25.8%;
+    }
+  }
+}

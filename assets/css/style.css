@@ -58,6 +58,14 @@ h2.title {
   overflow-y: visible;
 }
 
+p.title--sub {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  line-height: 174%;
+  letter-spacing: 1.28px;
+  text-align: center;
+  margin-top: -4vw;
+}
+
 h2.title::after {
   background-position: center center;
   background-repeat: no-repeat;
@@ -69,7 +77,6 @@ h2.title::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
 }
 @media screen and (min-width: 767px) {
   h2.title::after {
@@ -144,6 +151,7 @@ h2.faq__title::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -648,5 +656,73 @@ span.marker::before {
 @media screen and (min-width: 767px) {
   .about__button-container {
     width: 50%;
+  }
+}
+
+.trial {
+  background-color: #F9EFE3;
+  background-image: url("../img/background/wood_texture25.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.trial__title-container {
+  padding-top: 2vw;
+}
+
+.trial__img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 42px;
+}
+@media screen and (min-width: 767px) {
+  .trial__img-container {
+    flex-direction: row;
+  }
+}
+
+.trial__button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+.trial__button-container img {
+  display: inline-block;
+  width: clamp(350px, 90%, 600px);
+}
+
+.trial__scroll {
+  background-color: white;
+}
+.trial__scroll p {
+  z-index: 10;
+  transform: translateY(5px);
+}
+
+.trial__triangle-container {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-133px);
+  width: 100%;
+}
+@media screen and (min-width: 767px) {
+  .trial__triangle-container {
+    transform: translateY(-108px);
+  }
+}
+.trial__triangle-container img.triangle {
+  display: inline-block;
+  width: 293px;
+}
+@media screen and (min-width: 767px) {
+  .trial__triangle-container img.triangle {
+    width: 400px;
   }
 }/*# sourceMappingURL=style.css.map */

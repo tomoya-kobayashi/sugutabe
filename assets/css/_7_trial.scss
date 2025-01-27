@@ -1,0 +1,70 @@
+.trial {
+    background-color: #F9EFE3;
+    background-image: url("../img/background/wood_texture25.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trial__title-container{
+    padding-top: 2vw;
+}
+
+.trial__img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 42px;
+    @include pc {
+        flex-direction: row;
+    }
+    
+}
+
+.trial__button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    img {
+        display: inline-block;
+        width: clamp(350px, 90%, 600px);
+    }
+}
+
+// スクロール
+.trial__scroll {
+    background-color: white;
+    p {
+        z-index: 10;
+        transform: translateY(5px);
+    }
+}
+
+// 三角形（木目調）
+.trial__triangle-container {
+    z-index: 10;
+  
+    //セクション最下部に配置 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  
+    // 少し上にずらす
+    transform: translateY(-133px);
+    @include pc {
+      transform: translateY(-108px);
+    }
+  
+    // 三角形画像のサイズ
+    width: 100%;
+    img.triangle {
+        display: inline-block;
+        width: 293px;
+        @include pc {
+            width: 400px;
+        }
+    }
+}

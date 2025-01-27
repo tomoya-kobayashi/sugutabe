@@ -57,6 +57,14 @@ h2.title {
   padding: clamp(28px, 6vw, 105px) 0;
   overflow-y: visible;
 }
+// サブタイトル
+p.title--sub {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  line-height: 174%;
+  letter-spacing: 1.28px;
+  text-align: center;
+  margin-top: -4vw;
+}
 
 // タイトル　背景部分　共通設定
 h2.title::after {
@@ -80,7 +88,7 @@ h2.title::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
+  // z-index: -1;
 }
 
 // タイトル　背景部分　要素指定
@@ -147,6 +155,7 @@ h2.faq__title::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 
   //セクション最下部に配置 
   position: absolute;

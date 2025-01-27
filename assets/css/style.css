@@ -725,4 +725,36 @@ span.marker::before {
   .trial__triangle-container img.triangle {
     width: 400px;
   }
+}
+
+.reason__reason-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 72px 0;
+}
+@media screen and (min-width: 767px) {
+  .reason__reason-container {
+    flex-direction: row;
+    gap: 3.6vw;
+  }
+}
+
+.reason__reason-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 27px;
+}
+.reason__reason-item h3.caption {
+  font-weight: 700;
+  letter-spacing: 1.68px;
+  font-size: clamp(1.25rem, 5.3vw, 1.5rem);
+}
+@media screen and (min-width: 767px) {
+  .reason__reason-item h3.caption {
+    font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+  }
 }/*# sourceMappingURL=style.css.map */

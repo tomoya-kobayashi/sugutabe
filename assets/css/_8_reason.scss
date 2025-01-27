@@ -1,0 +1,28 @@
+.reason__reason-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 72px 0;
+    @include pc {
+        flex-direction: row;
+        gap: 3.6vw;
+    }
+}
+
+.reason__reason-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 27px;
+
+    h3.caption {
+        font-weight: 700;
+        letter-spacing: 1.68px;
+        font-size: clamp(1.25rem, 5.3vw ,1.5rem);
+        @include pc {
+            font-size: clamp(1.25rem, 1.7vw ,1.5rem);
+        }
+    }
+}

@@ -35,11 +35,12 @@
     }
   
     // ページ内リンクの設定
-    // scrollToContent('.nav-item--work', '#work');
-    // scrollToContent('.nav-item--profile', '#profile');
-    // scrollToContent('.nav-item--skill', '#skill');
-    // scrollToContent('.nav-item--access', '#access');
-    // scrollToContent('.logo', '#fv');
+    scrollToContent('.nav-item--about', '#about');
+    scrollToContent('.nav-item--reason', '#reason');
+    scrollToContent('.nav-item--voice', '#voice');
+    scrollToContent('.nav-item--faq', '#faq');
+    scrollToContent('.nav-item--trial', '#trial-1');
+    scrollToContent('.logo', '#fv');
 
     const swiper = new Swiper(".swiper", {
       slidesPerView: 1,

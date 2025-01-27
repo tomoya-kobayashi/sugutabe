@@ -9,7 +9,8 @@ img {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 600;
   line-height: 175%;
   letter-spacing: 3.36px;
@@ -830,4 +831,65 @@ span.marker::before {
 }
 .voice__voice-item p.text {
   font-size: 1rem;
+}
+
+.faq__title-container {
+  padding-top: 2vw;
+}
+
+.faq__faq-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-top: solid 1px #422B1A;
+  margin-top: 42px;
+  margin-bottom: 80px;
+}
+
+.faq__faq-item {
+  border-bottom: solid 1px #422B1A;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 42px;
+  padding: 42px 0;
+}
+.faq__faq-item h3.question,
+.faq__faq-item h4.answear {
+  vertical-align: middle;
+  font-size: clamp(1.25rem, 1.67vw, 1.5rem);
+}
+@media screen and (min-width: 767px) {
+  .faq__faq-item h3.question,
+  .faq__faq-item h4.answear {
+    font-size: clamp(1.25rem, 5.33vw, 1.5rem);
+  }
+}
+.faq__faq-item h3.question::before {
+  content: "";
+  background-image: url("../img/parts/question.svg");
+}
+.faq__faq-item h4.answear::before {
+  content: "";
+  background-image: url("../img/parts/answear.svg");
+}
+.faq__faq-item h3.question,
+.faq__faq-item h4.answear {
+  position: relative;
+  padding-left: 60px;
+}
+.faq__faq-item h3.question::before,
+.faq__faq-item h4.answear::before {
+  background-size: cover;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.faq__faq-item p.text {
+  padding-left: 60px;
 }/*# sourceMappingURL=style.css.map */

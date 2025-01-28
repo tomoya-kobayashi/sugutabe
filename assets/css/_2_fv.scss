@@ -24,6 +24,21 @@
     @include pc {
         max-height: 600px;
     }
+
+    // 画面幅に応じて画像をずらす。375pxのときは0px、768pxのときは-201px。線形補完
+    img.fv__img-item {
+        transform: translateY(
+            clamp(
+            -201px,                           // 最小値
+            calc( (-201px)/(768px - 375px)
+                    * (100vw - 375px) ),        // 線形補間
+            0px                               // 最大値
+            )
+        );
+        @include pc {
+            transform: translate(0, 0);
+        }
+    }
 }
 
 // 下半分

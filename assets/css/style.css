@@ -366,6 +366,14 @@ h2.faq__title::after {
     max-height: 600px;
   }
 }
+.fv__img-wrapper img.fv__img-item {
+  transform: translateY(clamp(-201px, -0.5114503817 * (100vw - 375px), 0px));
+}
+@media screen and (min-width: 767px) {
+  .fv__img-wrapper img.fv__img-item {
+    transform: translate(0, 0);
+  }
+}
 
 .fv__lower {
   display: flex;

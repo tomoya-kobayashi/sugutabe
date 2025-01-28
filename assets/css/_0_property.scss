@@ -23,8 +23,13 @@ $light-yellow: #FFFCDE;
 // メディアクエリの設定
 // 使用方法：通常のcssの中で、"@include pc{PC版のcss}"のように記述
 //======================================================
-@mixin pc{ //モバイル
+@mixin pc{ //PC
     @media screen and (min-width: 767px){
+        @content;
+    }
+}
+@mixin wide{ //広い場合
+    @media screen and (min-width: 1200px){
         @content;
     }
 }

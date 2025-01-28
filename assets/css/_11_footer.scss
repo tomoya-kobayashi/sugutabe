@@ -6,7 +6,7 @@
     width: 100%;
     z-index: 90;
     // footerの高さを明示（子要素で高さを指定するため）
-    height: clamp(60px, 10vw, 130px)
+    // height: clamp(60px, 10vw, 130px)
 }
 
 // ロゴ部分　外側
@@ -16,9 +16,11 @@
 
     padding-top: 11px;
     padding-bottom: 11px;
+    padding-left: 11px;
     @include pc {
         padding-top: 24px;
         padding-bottom: 24px;
+        padding-left: 24px;
     }
 }
 // ロゴ部分　内側
@@ -30,4 +32,9 @@
         display: inline-block;
         width: 100%;
     }
+}
+
+.footer__copyright {
+    font-size: clamp(0.5rem, 1.5vw, 1rem);
+    padding: 24px 24px 24px 0;
 }

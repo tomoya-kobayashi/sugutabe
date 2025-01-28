@@ -32,6 +32,20 @@
         display: inline-block;
         width: clamp(350px, 90%, 600px);
     }
+    .trial-button--pc {
+    display: none;  
+    }
+    .trial-button--sp {
+    display: inline;  
+    }
+    @include pc {
+        .trial-button--pc {
+            display: inline;  
+        }
+        .trial-button--sp {
+            display: none;  
+        }
+    }
 }
 
 // スクロール

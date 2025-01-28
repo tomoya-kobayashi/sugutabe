@@ -83,8 +83,9 @@ h2.title::after {
   background-repeat: no-repeat;
   background-size: 100% auto;
   display: block;
-  width: 100vw;
+  width: 100%;
   height: clamp(280px, 40vw, 450px);
+  overflow-x: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -200,11 +201,13 @@ h2.faq__title::after {
   width: 30%;
   padding-top: 11px;
   padding-bottom: 11px;
+  padding-left: 11px;
 }
 @media screen and (min-width: 767px) {
   .header__logo-wrapper {
     padding-top: 24px;
     padding-bottom: 24px;
+    padding-left: 24px;
   }
 }
 
@@ -319,6 +322,7 @@ h2.faq__title::after {
   width: 50%;
   padding-top: 24px;
   padding-bottom: 24px;
+  padding-left: 24px;
 }
 
 .drawer__logo {
@@ -397,7 +401,7 @@ h2.faq__title::after {
 }
 @media screen and (min-width: 767px) {
   .fv__lower {
-    padding-bottom: 0;
+    padding-bottom: 5vw;
     flex-direction: row;
   }
 }
@@ -434,6 +438,20 @@ h2.faq__title::after {
     width: 100%;
   }
 }
+.fv__button-container .fv__button--pc {
+  display: none;
+}
+.fv__button-container .fv__button--sp {
+  display: inline;
+}
+@media screen and (min-width: 767px) {
+  .fv__button-container .fv__button--pc {
+    display: inline;
+  }
+  .fv__button-container .fv__button--sp {
+    display: none;
+  }
+}
 
 .swiper {
   width: 100%;
@@ -447,6 +465,7 @@ h2.faq__title::after {
   .organic__content {
     flex-direction: row-reverse;
     gap: 4.23vw;
+    padding-bottom: 5vw;
   }
 }
 
@@ -723,6 +742,20 @@ span.marker::before {
   display: inline-block;
   width: clamp(350px, 90%, 600px);
 }
+.trial__button-container .trial-button--pc {
+  display: none;
+}
+.trial__button-container .trial-button--sp {
+  display: inline;
+}
+@media screen and (min-width: 767px) {
+  .trial__button-container .trial-button--pc {
+    display: inline;
+  }
+  .trial__button-container .trial-button--sp {
+    display: none;
+  }
+}
 
 .trial__scroll {
   background-color: white;
@@ -763,11 +796,10 @@ span.marker::before {
   gap: 28px;
   padding: 72px 0;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .reason__reason-container {
     flex-direction: row;
     align-items: flex-start;
-    gap: 3.6vw;
   }
 }
 
@@ -775,8 +807,8 @@ span.marker::before {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 27px;
-  max-width: 350px;
+  gap: 10px;
+  max-width: 370px;
 }
 .reason__reason-item h3.caption {
   font-weight: 700;
@@ -785,7 +817,7 @@ span.marker::before {
 }
 @media screen and (min-width: 767px) {
   .reason__reason-item h3.caption {
-    font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+    font-size: 1.2rem;
   }
 }
 
@@ -798,10 +830,10 @@ span.marker::before {
   padding-top: 95px;
   padding-bottom: 40px;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .voice__voice-container {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: inherit;
     gap: 2.36vw;
   }
 }
@@ -848,7 +880,7 @@ span.marker::before {
   color: #E25C55;
   width: 100%;
   padding: 32px 0;
-  font-size: clapm(1rem, 1.38vw, 1.25rem);
+  font-size: clamp(1rem, 1.38vw, 1.25rem);
 }
 .voice__voice-item .profile {
   display: flex;
@@ -930,18 +962,19 @@ span.marker::before {
   align-items: center;
   width: 100%;
   z-index: 90;
-  height: clamp(60px, 10vw, 130px);
 }
 
 .footer__logo-wrapper {
   width: 30%;
   padding-top: 11px;
   padding-bottom: 11px;
+  padding-left: 11px;
 }
 @media screen and (min-width: 767px) {
   .footer__logo-wrapper {
     padding-top: 24px;
     padding-bottom: 24px;
+    padding-left: 24px;
   }
 }
 
@@ -951,4 +984,9 @@ span.marker::before {
 .footer__logo img {
   display: inline-block;
   width: 100%;
+}
+
+.footer__copyright {
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+  padding: 24px 24px 24px 0;
 }/*# sourceMappingURL=style.css.map */

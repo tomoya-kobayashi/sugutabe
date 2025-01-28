@@ -92,8 +92,9 @@ h2.title::after {
 
   // サイズの指定
   display: block;
-  width: 100vw;
+  width: 100%;
   height: clamp(280px, 40vw, 450px);
+  overflow-x: hidden;
 
   // 背景画像の配置
   position: absolute;

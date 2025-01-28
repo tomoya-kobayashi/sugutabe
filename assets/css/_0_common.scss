@@ -7,6 +7,17 @@ img {
   max-width: 100%;
 }
 
+.fadeIn {
+  transform: translate(0, 50px);
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.fadeIn.animated {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 h1,
 h2,
 h3,

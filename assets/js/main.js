@@ -42,6 +42,7 @@
     scrollToContent('.nav-item--trial', '#trial-1');
     scrollToContent('.logo', '#fv');
 
+    // swiperの設定（fvの画像）
     const swiper = new Swiper(".swiper", {
       slidesPerView: 1,
       breakpoints: {
@@ -60,6 +61,21 @@
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
       }
+    });
+
+    // fadeIn
+    $(window).on('load scroll', function(){
+      const fadeIn = $('.fadeIn');
+
+      fadeIn.each(function(){
+        const boxOffset = $(this).offset().top;
+        const scrollPos = $(window).scrollTop();
+        const wh = $(window).height();
+
+        if(scrollPos > boxOffset - wh + 100){
+          $(this).addClass('animated');
+        }
+      });
     });
 
   });
